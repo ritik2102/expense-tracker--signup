@@ -18,7 +18,7 @@ async function submitHandler(e) {
             "email": email,
             "password": password
         }
-        const res = await axios.post("http://localhost:3000/users/add-user", data);
+        const res = await axios.post("http://16.171.5.97:3000/users/add-user", data);
         
         if (res.data.resData !== "success") {
             alert("User already registered")
